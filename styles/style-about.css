@@ -1,0 +1,29 @@
+.container__about-me{
+    padding: 50px;
+}
+
+.container__about-me h1{
+    color: var(--main-color);
+}
+
+.container__about-me p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.container__about-me a{
+    margin-right: 15px;
+    color: var(--main-color);
+}
+
+.container__about-me a:hover{
+    color: var(--main-color-dark);
+}
+
+/* Responsividade */
+
+@media (max-width: 760px) {
+    .container__about-me{
+        padding: 35px;
+    }
+}

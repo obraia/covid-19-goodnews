@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+:root {
+    --main-color: #18ad2c;
+    --main-color-dark: #0e8b1f;
+    --main-color-light: #37d64c;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px #00000031;
+    z-index: 2;
+}
+
+.navbar__logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.navbar__links {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar__links__item a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.navbar__links__item__selected{
+    height: 50px;
+    border-bottom: 3px solid var(--main-color);
+    background-color: #fcfcfc;
+    pointer-events: none;
+}
+
+.navbar__links__item a:hover {
+    border-bottom: 3px solid var(--main-color);
+    background-color: #fcfcfc;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 150px);
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-top: 3px solid var(--main-color);
+}
+
+/* Responsividade */
+
+@media (max-width: 760px) {
+    .navbar{
+        padding: 0 10px;
+    }
+    .navbar__links {
+        margin: auto;
+    }
+    .navbar a{
+        font-size: 12px;
+    }
+    .navbar__logo{
+        display: none;
+    }
+    .footer{
+        padding: 15px;
+        text-align: center;
+    }
+}
