@@ -1,0 +1,19 @@
+.container{
+    flex-direction: column;
+}
+
+.container__title{
+    color: var(--main-color);
+}
+
+.container__links li{
+    margin-bottom: 15px;
+}
+
+.container__links a{
+    color: #000;
+}
+
+.container__links a:hover{
+    color: var(--main-color);
+}
